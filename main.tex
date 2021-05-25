@@ -1,0 +1,212 @@
+%-------------------------
+% Resume in Latex
+% Author : Akshay Rajpurohit
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Akshay Rajpurohit} \\ \vspace{1pt}
+    Door No. 202, House No. 3-5-983, Narayanguda, Hyderabad - 500029\\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +91 6309616098 ~ \href{mailto:akj.rajpurohit@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{akj.rajpurohit@gmail.com}} ~
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/akshayrajp}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/akshayrajp}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------DEVELOPMENT SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, Python, C, C++, HTML/CSS} \\
+     \textbf{Developer Tools}{: Google Cloud Platform, Microsoft Azure, Digital Ocean, SSH/SFTP, VSCode} \\
+     \textbf{Frameworks/Technologies}{: React.js, Node.js, Express.js, MySQL, PostgreSQL, Bootstrap, Tailwind CSS, Linux, Git} \\
+     \textbf{Databases}{: MySQL, PostgreSQL, InfluxDB} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Freelancing}{May 2020 -- Present}
+      {Full Stack Developer}{Hyderabad, Telangana}
+      \resumeItemListStart
+        \resumeItem{Built a Psychometric Test Module for a client with React.js as the front-end and Node.js as the back-end, which sent emails containing the test results using Nodemailer and Google Cloud Platform. Also built a website using WordPress for the same client.}
+        \resumeItem{Built a coupon management system for a client with React.js as front-end and PHP and MySQL as back-end. It was a CRUD project where users could easily add, delete and edit coupons, complete with validation and live feedback to prevent duplicate coupons from being added.}
+        \resumeItem{Built a simple emailing command-line tool to bulk send certificates/documents as attachments to emails stored in JSON format.}
+        \resumeItem{Built a section in a clients website where I added an open source calendar tool highlighting their events using the calendar.}
+        \resumeItem{Built a section in my college club's website where I added a code editor to demonstrate solutions of questions of an event that we conducted.}
+        \resumeItem{Built a info website for a client using Next.js and Tailwind CSS.}
+
+     \resumeItemListEnd
+
+    \resumeSubheading
+        {coding.Studio( );}{January 2020 - March 2021}
+        {CP Executive}{Hyderabad, Telangana}
+        \resumeItemListStart
+          \resumeItem{Founded the CodeChef Campus Chapter in my college and and have been the President for the same since its inception in March 2020. As the President, I have had the opportunity to spearhead the various activities that we have conducted to promote the growth of CP culture in our college. As a result, there has been a considerable growth in the number of participants in monthly CP contests.}
+          \resumeItem{Have held the position of Lead in Google Developer Student Club VBIT since August 2020. As the lead, I have promoted the use of Google Cloud Platform Products by enrolling people into the '30 Days of Google Cloud' programme.}
+          \resumeItem{Participated In IEEEXtreme 2020 and scored an All India Rank of 16 and Global Rank of 280.}
+
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Remote Monitoring of Environmental Conditions with Telegram Responder Bot} $|$ \emph{Python, C}}{April 2021}
+          \resumeItemListStart
+            \resumeItem{Developed a Raspberry Pi project that reads the values of sensors (Radiation, Temperature and Humidity) and relays the readings to InfluxDB deployed on an Azure VPS instance on the cloud.}
+            \resumeItem{Used Skyhook Precision Location module to determine the geographical location without using a physical GPS module.}
+            \resumeItem{Developed a Telegram Bot in Python that fetches data from the InfluxDB and sends a message to the user (Automatic alert messages and on-demand live sensor readings). Also added basic interactivity to the Bot.}
+            \resumeItem{Deployed the Bot on the Azure VPS instance so that it is always live.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{studyMap} $|$ \emph{HTML, CSS, JavaScript}}{March 2019}
+          \resumeItemListStart
+            \resumeItem{Created a web-app that helps students prepare for their exams by generating a tailored exam-prep Time-table for them.}
+            \resumeItem{Processed user inputted information (number of days left for the exam, subjects and their respective difficulty ratings) and generated a time-table using those input parameters and printed it out in a PDF format.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+    \resumeSubHeadingListEnd
+\vspace{1pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vignana Bharathi Institute of Technology}{Aug. 2017 -- June 2021}
+      {Bachelor of Technology in Electronics and Communication Engineerig}{7.14 CGPA}
+  \resumeSubHeadingListEnd
+
+% \section{Hobbies}
+%     %\resumeSubHeadingListStart
+%         \begin{multicols}{4}
+%             \begin{itemize}[itemsep=-5pt, parsep=3pt]
+%                 \item\small Reading Novels
+%                 \item Playing Games
+%                 \item Practising CP
+%                 \item Watching Movies/TV Shows
+%             \end{itemize}
+%         \end{multicols}
+%         \vspace*{2.0\multicolsep}
+%     %\resumeSubHeadingListEnd
+
+\end{document}
